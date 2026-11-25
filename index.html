@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Desenvolvedor Full Stack</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- CSS Customizado -->
+    <link rel="stylesheet" href="style.css">
+</head> 
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#">
+                <span class="wireframe-logo"><i class="bi bi-code-slash"></i></span>
+                <span>DEV Isaque Aguiar</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-lg-center gap-lg-3">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre Mim</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experiencia">Experiência</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                    <li class="nav-item ms-lg-2">
+                        <a href="#" class="btn btn-dark btn-sm px-3" id="btnDownloadCV">
+                            <i class="bi bi-download me-1"></i> Baixar Currículo
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO / ÁREA PRINCIPAL -->
+    <header id="inicio" class="hero-section py-5 border-bottom">
+        <div class="container py-4">
+            <div class="row align-items-center g-4">
+                <div class="col-md-4 text-center">
+                    <div class="photo-placeholder mx-auto">
+                        <img class="img-fluid" src="https://avatars.githubusercontent.com/u/247434060?v=4"
+                            alt="minha-foto">
+                    </div>
+                </div>
+                <div class="col-md-8 text-center text-md-start">
+                    <h1 class="display-5 fw-bold mb-2">Isaque Aguiar Eufrasio</h1>
+                    <h2 class="h5 text-secondary fw-semibold mb-3">
+                        Desenvolvedor Full Stack | Estudante de Engenharia de Computação
+                    </h2>
+                    <p class="text-muted mb-4 col-lg-10">
+                        Desenvolvedor apaixonado por construir aplicações web escaláveis, APIs robustas e interfaces
+                        intuitivas. Buscando oportunidades para aplicar conhecimentos em desenvolvimento moderno e
+                        resolver problemas reais.
+                    </p>
+                    <div class="d-flex flex-wrap gap-2 justify-content-center justify-content-md-start">
+                        <a href="#projetos" class="btn btn-secondary px-4">Ver Projetos</a>
+                        <a href="#contato" class="btn btn-dark px-4">Entrar em Contato</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- SOBRE MIM -->
+    <section id="sobre" class="py-5 border-bottom">
+        <div class="container">
+            <h3 class="section-title text-center mb-5">Sobre Mim</h3>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="wireframe-box h-100 p-4">
+                        <h4 class="h5 fw-bold mb-3">Minha Jornada</h4>
+                        <div class="d-flex align-items-start gap-3">
+                            <div class="icon-circle flex-shrink-0">
+                                <i class="bi bi-person-workspace fs-4"></i>
+                            </div>
+                            <p class="text-muted mb-0">
+                                Iniciei minha trajetória na programação desenvolvendo pequenos projetos acadêmicos e
+                                automações. Hoje foco no ecossistema JavaScript/TypeScript e Python, unindo boas
+                                práticas de arquitetura de software e experiência do usuário.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="wireframe-box h-100 p-4">
+                        <h4 class="h5 fw-bold mb-3">Educação</h4>
+                        <p class="fw-semibold mb-1">Bacharelado em Engenharia de Computação</p>
+                        <p class="text-muted small mb-2">Centro Universitário ENIAC • 2025 – 2029 (Cursando)</p>
+                        <p class="text-muted mb-0">
+                            Foco em Estruturas de Dados, Banco de Dados Relacionais e Não-Relacionais, Engenharia de
+                            Requisitos e Desenvolvimento Web.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HABILIDADES TÉCNICAS -->
+    <section id="habilidades" class="py-5 border-bottom bg-light-subtle">
+        <div class="container">
+            <h3 class="section-title text-center mb-5">Habilidades Técnicas</h3>
+            <div class="row g-4">
+                <!-- Frontend -->
+                <div class="col-sm-6 col-lg-3">
+                    <div class="wireframe-box p-3 h-100">
+                        <h5 class="h6 fw-bold border-bottom pb-2 mb-3">Frontend</h5>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="skill-badge"><i class="bi bi-filetype-html"></i> HTML5</span>
+                            <span class="skill-badge"><i class="bi bi-filetype-css"></i> CSS3</span>
+                            <span class="skill-badge"><i class="bi bi-filetype-js"></i> JavaScript</span>
+                            <span class="skill-badge"><i class="bi bi-bootstrap"></i> Bootstrap</span>
+                            <span class="skill-badge"><i class="bi bi-code-square"></i> React</span>
+                            <span class="skill-badge"><i class="bi bi-code-square"></i> Angular</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Backend -->
+                <div class="col-sm-6 col-lg-3">
+                    <div class="wireframe-box p-3 h-100">
+                        <h5 class="h6 fw-bold border-bottom pb-2 mb-3">Backend</h5>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="skill-badge"><i class="bi bi-hdd-network"></i> Node.js</span>
+                            <span class="skill-badge"><i class="bi bi-terminal"></i> Express</span>
+                            <span class="skill-badge"><i class="bi bi-filetype-java"></i> Java</span>
+                            <span class="skill-badge"><i class="bi bi-filetype-java"></i> Spring Boot</span>
+                            <span class="skill-badge"><i class="bi bi-filetype-php"></i> Php</span>
+                            <span class="skill-badge"><i class="bi bi-braces"></i> REST APIs</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Banco de Dados -->
+                <div class="col-sm-6 col-lg-3">
+                    <div class="wireframe-box p-3 h-100">
+                        <h5 class="h6 fw-bold border-bottom pb-2 mb-3">Banco de Dados</h5>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="skill-badge"><i class="bi bi-database"></i> PostgreSQL</span>
+                            <span class="skill-badge"><i class="bi bi-database-fill"></i> MySQL</span>
+                            <span class="skill-badge"><i class="bi bi-server"></i> MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Ferramentas -->
+                <div class="col-sm-6 col-lg-3">
+                    <div class="wireframe-box p-3 h-100">
+                        <h5 class="h6 fw-bold border-bottom pb-2 mb-3">Ferramentas</h5>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="skill-badge"><i class="bi bi-git"></i> Git & GitHub</span>
+                            <span class="skill-badge"><i class="bi bi-box-seam"></i> Docker</span>
+                            <span class="skill-badge"><i class="bi bi-cloud"></i> AWS Básico</span>
+                            <span class="skill-badge"><i class="bi bi-kanban"></i> Scrum</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFÓLIO EM DESTAQUE -->
+    <section id="projetos" class="py-5 border-bottom">
+        <div class="container">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center mb-4">
+                <h3 class="section-title mb-3 mb-md-0">Portfólio em Destaque</h3>
+                <!-- Filtro JS -->
+                <div class="btn-group" role="group" aria-label="Filtro de projetos">
+                    <button type="button" class="btn btn-outline-dark btn-sm active filter-btn"
+                        data-filter="all">Todos</button>
+                    <button type="button" class="btn btn-outline-dark btn-sm filter-btn" data-filter="fullstack">Full
+                        Stack</button>
+                    <button type="button" class="btn btn-outline-dark btn-sm filter-btn"
+                        data-filter="frontend">Frontend</button>
+                    <button type="button" class="btn btn-outline-dark btn-sm filter-btn"
+                        data-filter="backend">Backend</button>
+                </div>
+            </div>
+
+            <div class="row g-4" id="projectsContainer">
+                <!-- Projeto 1 -->
+                <div class="col-md-6 col-lg-4 project-item" data-category="fullstack">
+                    <div class="card wireframe-card h-100">
+                        <div class="wireframe-img-placeholder">
+                            <img class="img-fluid"
+                                src="https://res.cloudinary.com/monday-blogs/fl_lossy,f_auto,q_auto/wp-blog/2023/09/pt_dashboards_task_management-1.png"
+                                alt="imagem-projetoA">
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">Sistema de Gestão de Tarefas</h5>
+                            <p class="card-text text-muted small flex-grow-1">
+                                Aplicação web completa com autenticação JWT, quadro Kanban interativo e painel de
+                                métricas.
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge bg-light text-dark border">React</span>
+                                <span class="badge bg-light text-dark border">Node.js</span>
+                                <span class="badge bg-light text-dark border">PostgreSQL</span>
+                            </div>
+                            <div class="d-flex justify-content-between border-top pt-2">
+                                <a href="#" class="text-dark text-decoration-none small fw-semibold"><i
+                                        class="bi bi-github"></i> Código</a>
+                                <a href="#" class="text-dark text-decoration-none small fw-semibold"><i
+                                        class="bi bi-box-arrow-up-right"></i> Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto 2 -->
+                <div class="col-md-6 col-lg-4 project-item" data-category="frontend">
+                    <div class="card wireframe-card h-100">
+                        <div class="wireframe-img-placeholder">
+                            <img class="img-fluid"
+                                src="https://assets.justinmind.com/wp-content/uploads/2020/02/dashboard-layout-hierarchy.png"
+                                alt="imagem-projetoB">
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">Dashboard Financeiro Pessoal</h5>
+                            <p class="card-text text-muted small flex-grow-1">
+                                Interface responsiva para controle de receitas e despesas com gráficos dinâmicos e
+                                exportação CSV.
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge bg-light text-dark border">HTML/CSS</span>
+                                <span class="badge bg-light text-dark border">JavaScript</span>
+                                <span class="badge bg-light text-dark border">Bootstrap</span>
+                            </div>
+                            <div class="d-flex justify-content-between border-top pt-2">
+                                <a href="#" class="text-dark text-decoration-none small fw-semibold"><i
+                                        class="bi bi-github"></i> Código</a>
+                                <a href="#" class="text-dark text-decoration-none small fw-semibold"><i
+                                        class="bi bi-box-arrow-up-right"></i> Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto 3 -->
+                <div class="col-md-6 col-lg-4 project-item" data-category="backend">
+                    <div class="card wireframe-card h-100">
+                        <div class="wireframe-img-placeholder">
+                            <img class="img-fluid"
+                                src="https://mailchimp.com/ctf/images/yzco4xsimv0y/4gAAyH3Yja7Gd7Nl2mk1fI/a2d462e26f162fe8c3583019ca77c825/4_-_Use_cases_for_REST_APIs-01.png?w=580&q=70"
+                                alt="imagem-projetoC">
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">API RESTful de E-commerce</h5>
+                            <p class="card-text text-muted small flex-grow-1">
+                                API escalável para catálogo de produtos, carrinho de compras, controle de estoque e
+                                documentação Swagger.
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge bg-light text-dark border">Node.js</span>
+                                <span class="badge bg-light text-dark border">Express</span>
+                                <span class="badge bg-light text-dark border">MongoDB</span>
+                            </div>
+                            <div class="d-flex justify-content-between border-top pt-2">
+                                <a href="#" class="text-dark text-decoration-none small fw-semibold"><i
+                                        class="bi bi-github"></i> Código</a>
+                                <a href="#" class="text-dark text-decoration-none small fw-semibold"><i
+                                        class="bi bi-box-arrow-up-right"></i> Docs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIÊNCIA ACADÊMICA E ESTÁGIOS -->
+    <section id="experiencia" class="py-5 border-bottom bg-light-subtle">
+        <div class="container">
+            <h3 class="section-title text-center mb-5">Experiência Acadêmica e Estágios</h3>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="wireframe-box p-4 h-100">
+                        <div class="d-flex align-items-center gap-2 mb-2">
+                            <span class="dot-indicator"></span>
+                            <h5 class="h6 fw-bold mb-0">Estagiário de Informática</h5>
+                        </div>
+                        <p class="text-muted small mb-2">Start Pro • 2022 – 2024</p>
+                        <p class="text-muted small mb-0">
+                            Manutenção de sistemas web, criação de endpoints REST, correção de bugs e participação em
+                            cerimônias ágeis.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="wireframe-box p-4 h-100">
+                        <div class="d-flex align-items-center gap-2 mb-2">
+                            <span class="dot-indicator"></span>
+                            <h5 class="h6 fw-bold mb-0">Instrutor de Tecnologia CLT</h5>
+                        </div>
+                        <p class="text-muted small mb-2">Start Pro • 2024 – 2026</p>
+                        <p class="text-muted small mb-0">
+                            Auxílio a alunos nas disciplinas de lógica de programação, estruturas de dados e revisão de
+                            código.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="wireframe-box p-4 h-100">
+                        <div class="d-flex align-items-center gap-2 mb-2">
+                            <span class="dot-indicator"></span>
+                            <h5 class="h6 fw-bold mb-0">Estagiário de Desenvolvimento de Software</h5>
+                        </div>
+                        <p class="text-muted small mb-2">Centro Universitário ENIAC • 2026 – Atual</p>
+                        <p class="text-muted small mb-0">
+                            Criação de landing pages responsivas e integração com formulários e bancos de dados para
+                            pequenos negócios.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DEPOIMENTOS -->
+    <section id="depoimentos" class="py-5 border-bottom">
+        <div class="container">
+            <h3 class="section-title text-center mb-5">Depoimentos</h3>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="wireframe-box p-4 h-100">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="avatar-placeholder"><i class="bi bi-person"></i></div>
+                            <div>
+                                <h6 class="fw-bold mb-0">Prof. Carlos Silva</h6>
+                                <small class="text-muted">Orientador Acadêmico</small>
+                            </div>
+                        </div>
+                        <p class="text-muted small mb-0">
+                            "Excelente capacidade analítica e comprometimento com entregas limpas e bem documentadas em
+                            todos os projetos da disciplina."
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="wireframe-box p-4 h-100">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="avatar-placeholder"><i class="bi bi-person"></i></div>
+                            <div>
+                                <h6 class="fw-bold mb-0">Mariana Costa</h6>
+                                <small class="text-muted">Tech Lead</small>
+                            </div>
+                        </div>
+                        <p class="text-muted small mb-0">
+                            "Aprende rápido novas tecnologias e colabora muito bem com a equipe tanto no frontend quanto
+                            nas regras de negócio do backend."
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="wireframe-box p-4 h-100">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="avatar-placeholder"><i class="bi bi-person"></i></div>
+                            <div>
+                                <h6 class="fw-bold mb-0">Rafael Mendes</h6>
+                                <small class="text-muted">Cliente Freelance</small>
+                            </div>
+                        </div>
+                        <p class="text-muted small mb-0">
+                            "Entregou nosso site antes do prazo previsto, totalmente responsivo e fácil de administrar."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="py-5 bg-light-subtle">
+        <div class="container">
+            <h3 class="section-title text-center mb-4">Entre em Contato</h3>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <form id="contactForm" class="wireframe-box p-4 bg-white">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="nome" class="form-label small fw-bold">Nome</label>
+                                <input type="text" class="form-control wireframe-input" id="nome" placeholder="Seu nome"
+                                    required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email" class="form-label small fw-bold">E-mail</label>
+                                <input type="email" class="form-control wireframe-input" id="email"
+                                    placeholder="seu@email.com" required>
+                            </div>
+                            <div class="col-12">
+                                <label for="assunto" class="form-label small fw-bold">Assunto</label>
+                                <input type="text" class="form-control wireframe-input" id="assunto"
+                                    placeholder="Oportunidade / Projeto" required>
+                            </div>
+                            <div class="col-12">
+                                <label for="mensagem" class="form-label small fw-bold">Mensagem</label>
+                                <textarea class="form-control wireframe-input" id="mensagem" rows="4"
+                                    placeholder="Escreva sua mensagem..." required></textarea>
+                            </div>
+                            <div class="col-12 text-end">
+                                <button type="submit" class="btn btn-dark px-4">Enviar Mensagem</button>
+                            </div>
+                        </div>
+                        <div id="formFeedback" class="alert alert-secondary mt-3 d-none mb-0 small" role="alert"></div>
+                    </form>
+
+                    <!-- Redes Sociais -->
+                    <div class="d-flex justify-content-center gap-3 mt-4 fs-4">
+                        <a href="https://www.linkedin.com/in/isaque-aguiar-eufr%C3%A1sio-816764352/" class="text-dark" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://github.com/profisaqueaguiar-spec" class="text-dark" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                        <a href="#" class="text-dark" aria-label="Twitter/X"><i class="bi bi-twitter-x"></i></a>
+                        <a href="mailto:profisaqueaguiar@gmail.com" class="text-dark" aria-label="Enviar Email"><i
+                                class="bi bi-envelope-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="py-3 border-top bg-white">
+        <div
+            class="container d-flex flex-column flex-sm-row justify-content-between align-items-center small text-muted">
+            <span>&copy; 2026 Isaque Aguiar. Todos os direitos reservados.</span>
+            <div class="d-flex gap-3 mt-2 mt-sm-0">
+                <a href="#inicio" class="text-muted text-decoration-none">Início</a>
+                <a href="#projetos" class="text-muted text-decoration-none">Projetos</a>
+                <a href="#contato" class="text-muted text-decoration-none">Contato</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JS Customizado -->
+    <script src="script.js"></script>
+</body>
+
+</html>
